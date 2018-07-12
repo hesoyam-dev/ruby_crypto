@@ -1,0 +1,43 @@
+%h2 Decrypt file from S3 bucket to another S3 bucket
+%form{action: "/s3_decrypt", method: "POST"}
+  %p
+    Source Bucket:
+    %input#source_bucket{name: "source-bucket", type: "text"}/
+
+    &nbsp;
+    &nbsp;
+
+    Destination Bucket:
+    %input#source_bucket{name: "destination-bucket", type: "text"}/
+  %p
+    Source Key:
+    %input#source_key{name: "source-key", type: "text"}/
+
+    &nbsp;
+    &nbsp;
+
+    Destination Key:
+    %input#source_key{name: "destination-key", type: "text"}/
+  %p
+    Source Region:
+    %input#source_region{name: "source-region", type: "text"}/
+
+    &nbsp;
+    &nbsp;
+
+    Destination Region:
+    %input#source_region{name: "destination-region", type: "text"}/
+  %p
+    Arn Key:
+    %input#arn{name: "arn", type: "text"}/
+  %h5 Optional
+  %p
+    Tags
+    %input#tags{name: "tags", type: "text"}/
+  %p
+    Content Type
+    %input#source_region{name: "content-type", type: "text"}/
+  %input{type: "Submit"}/
+%br/
+
+%a{href: "/dashboard"} Back to dashboard

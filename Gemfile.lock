@@ -1,0 +1,119 @@
+GIT
+  remote: https://git.epam.com/Yuriy_Kuzhiy/ruby_crypto.git
+  revision: ab0934868e11f3ab8b8d47540323d9c5b410c3e5
+  specs:
+    ruby_crypto (0.1.2)
+      aws-sdk-kms (~> 1.5.0, >= 1.5.0)
+      aws-sdk-s3 (~> 1.9.1, >= 1.9.1)
+      rubocop (~> 0.56.0)
+      slop (~> 4.6.2, >= 4.6.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (5.2.0)
+      activesupport (= 5.2.0)
+    activerecord (5.2.0)
+      activemodel (= 5.2.0)
+      activesupport (= 5.2.0)
+      arel (>= 9.0)
+    activesupport (5.2.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    arel (9.0.0)
+    ast (2.4.0)
+    aws-eventstream (1.0.0)
+    aws-partitions (1.87.0)
+    aws-sdk-core (3.21.2)
+      aws-eventstream (~> 1.0)
+      aws-partitions (~> 1.0)
+      aws-sigv4 (~> 1.0)
+      jmespath (~> 1.0)
+    aws-sdk-kms (1.5.0)
+      aws-sdk-core (~> 3)
+      aws-sigv4 (~> 1.0)
+    aws-sdk-s3 (1.9.1)
+      aws-sdk-core (~> 3)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.0)
+    aws-sigv4 (1.0.2)
+    bcrypt (3.1.12)
+    coderay (1.1.2)
+    concurrent-ruby (1.0.5)
+    daemons (1.2.6)
+    eventmachine (1.2.7)
+    haml (5.0.4)
+      temple (>= 0.8.0)
+      tilt
+    i18n (1.0.1)
+      concurrent-ruby (~> 1.0)
+    jmespath (1.4.0)
+    method_source (0.9.0)
+    minitest (5.11.3)
+    mustermann (1.0.2)
+    parallel (1.12.1)
+    parser (2.5.1.0)
+      ast (~> 2.4.0)
+    powerpack (0.1.1)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    rack (2.0.5)
+    rack-protection (2.0.1)
+      rack
+    rainbow (3.0.0)
+    rake (12.3.1)
+    require_all (2.0.0)
+    rubocop (0.56.0)
+      parallel (~> 1.10)
+      parser (>= 2.5)
+      powerpack (~> 0.1)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
+    ruby-progressbar (1.9.0)
+    sinatra (2.0.1)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.1)
+      tilt (~> 2.0)
+    sinatra-activerecord (2.0.13)
+      activerecord (>= 3.2)
+      sinatra (>= 1.0)
+    sinatra-flash (0.3.0)
+      sinatra (>= 1.0.0)
+    slop (4.6.2)
+    sqlite3 (1.3.13)
+    temple (0.8.0)
+    thin (1.7.2)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
+    thread_safe (0.3.6)
+    tilt (2.0.8)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+    unicode-display_width (1.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activerecord
+  bcrypt
+  bundler
+  haml
+  pry
+  rake
+  require_all
+  ruby_crypto!
+  sinatra
+  sinatra-activerecord
+  sinatra-flash
+  sqlite3
+  thin
+
+BUNDLED WITH
+   1.16.2

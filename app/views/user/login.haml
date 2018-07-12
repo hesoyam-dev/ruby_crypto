@@ -1,0 +1,23 @@
+%h2 Log In to Your Account
+%form{action: "/login", method: "POST"}
+  %p
+    Username:
+    %input#username{name: "username", type: "text"}/
+  %p
+    Password:
+    %input#password{name: "password", type: "password"}/
+  %input{type: "Submit"}/
+%br/
+
+- if flash[:message]
+  %b
+    %i
+  %p.message= flash[:message]
+
+
+%br/
+%p Don't have an account yet?
+%p
+  %a{href: "/sign_up"} Sign up here.
+%p
+  %a{href: "/"} Back to the main page.

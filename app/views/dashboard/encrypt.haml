@@ -1,0 +1,21 @@
+%h2 Encrypt file to S3 bucket
+%form{action: "/encrypt", :enctype => "multipart/form-data", method: "POST"}
+  %p
+    File Path:
+    %input{:name => "file", :type => "file"}/
+  %p
+    Key:
+    %input#key{name: "key", type: "text"}/
+  %p
+    Bucket Name:
+    %input#bucket_name{name: "bucket", type: "text"}/
+  %p
+    Region:
+    %input#region{name: "region", type: "text"}/
+  %p
+    Arn Key:
+    %input#arn{name: "arn", type: "text"}/
+  %input{type: "Submit"}/
+%br/
+
+%a{href: "/dashboard"} Back to dashboard

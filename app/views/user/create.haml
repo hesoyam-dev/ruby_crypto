@@ -1,0 +1,14 @@
+%h2 Sign Up
+%form{action: "/sign_up", method: "POST"}
+  %p
+    Username:
+    %input#username{name: "username", type: "text"}/
+  %p
+    Password:
+    %input#password{name: "password", type: "password"}/
+  %input{type: "Submit"}/
+%br/
+%p
+  %a{href: "/login"} Already have an account? Log in here.
+%p
+  %a{href: "/"} Back to the main page

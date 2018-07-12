@@ -1,0 +1,19 @@
+%h2 Decrypt file from S3 bucket to STDOUT
+%form{action: "/decrypt", method: "POST"}
+  %p
+    Source Bucket:
+    %input#source_bucket{name: "source-bucket", type: "text"}/
+  %p
+    Source Key:
+    %input#source_key{name: "source-key", type: "text"}/
+  %p
+    Source Region:
+    %input#source_region{name: "source-region", type: "text"}/
+  %p
+    Arn Key:
+    %input#arn{name: "arn", type: "text"}/
+  %input{type: "Submit"}/
+%br/
+
+
+%a{href: "/dashboard"} Back to dashboard

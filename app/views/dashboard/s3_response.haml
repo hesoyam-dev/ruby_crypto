@@ -1,0 +1,9 @@
+%h2 Result
+- if response[:stdout]
+  %b
+    %i
+  %p.message= response[:stdout]
+- if response[:stderr]
+  %b
+    %i
+  %p.message= response[:stderr]
