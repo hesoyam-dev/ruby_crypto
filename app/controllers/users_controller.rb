@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  # LOG IN
+
   get '/login' do
     if is_logged_in?
       flash[:message] = 'You were already logged in.'
@@ -19,8 +19,6 @@ class UsersController < ApplicationController
       redirect '/login'
     end
   end
-
-  # SIGN UP
 
   get '/sign_up' do
     if is_logged_in?
@@ -44,8 +42,6 @@ class UsersController < ApplicationController
       redirect to '/dashboard'
     end
   end
-
-  # LOG OUT
 
   get '/log_out' do
     if is_logged_in?

@@ -8,24 +8,6 @@ class RubyCryptoManager
     @options = options
   end
 
-  # def parse_options
-  #   @options_line = command
-  #   save_file
-  #   options.each_pair { |k, v| @options_line << " --#{k} '#{v}'" }
-  # end
-  #
-  # def process
-  #   result = Hash.new
-  #   parse_options
-  #   stdout, stderr, status = Open3.capture3("ruby_crypto #{@options_line}")
-  #   if stdout
-  #     result[:stdout] = stdout
-  #   elsif stderr
-  #     result[:stderr] = stderr
-  #   end
-  #   result
-  # end
-
   def save_file
     if options.key?('file')
       upload_dir = File.expand_path(__dir__).gsub('app/services', 'public/uploaded')
